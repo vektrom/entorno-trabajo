@@ -6,7 +6,7 @@ PACKAGE_CONTROL_USER_FILE=~/.config/sublime-text-3/Packages/User/Package\ Contro
 LIST_OF_APPS="git nodejs npm ruby jq"
 NPM_PACKAGES="bower browser-sync browserify csslint gulp jscs jshint jsxhint"
 GEM_PACKAGES="sass scss-lint"
-SUBLIME_PACKAGES='["BracketHighlighter", "CSScomb", "EditorConfig", "GitGutter", "Package Control", "Sass", "SublimeCodeIntel", "SublimeLinter", "SublimeLinter-contrib-scss-lint", "SublimeLinter-csslint", "SublimeLinter-sjcss", "SublimeLinter-jshint", "SublimeLinter-jsxhint", "SublimeOnSaveBuild"]'
+SUBLIME_PACKAGES='["BracketHighlighter", "CSScomb", "EditorConfig", "GitGutter", "Package Control", "Sass", "SublimeCodeIntel", "SublimeLinter", "SublimeLinter-contrib-scss-lint", "SublimeLinter-csslint", "SublimeLinter-jscss", "SublimeLinter-jshint", "SublimeLinter-jsxhint", "SublimeOnSaveBuild"]'
 
 IS_SUBLIME_INSTALLED=$(dpkg -l | grep "sublime-text" | awk '{print $3}')
 SUBLIMETEXT64="http://c758482.r82.cf2.rackcdn.com/sublime-text_build-3083_amd64.deb"
