@@ -18,7 +18,7 @@ echo ""
 echo 'Instalando paquetes.'
 apt-get install $LIST_OF_APPS
 
-if (( $IS_SUBLIME_INSTALLED < 3083 ))
+if [ -z "$IS_SUBLIME_INSTALLED" ] || (( $IS_SUBLIME_INSTALLED < 3083 ))
 then
 	# Instalación de Sublime Text 3
 	echo ""
@@ -50,7 +50,7 @@ echo 'Instalando paquetes GEM'
 gem install $GEM_PACKAGES
 
 # Instalación manual de Package Control
-while [ ! -f $PACKAGE_CONTROL_USER_FILE ] 
+while [ ! -f "$PACKAGE_CONTROL_USER_FILE" ] 
 do
 	echo ""
 	echo 'Para continuar tienes que instalar Package Control en Sublime Text.'
